@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">小零食</string>
+
+    <string-array name="units">
+        <item>全部</item>
+        <item>鱼虾</item>
+        <item>饮料</item>
+        <item>糖果</item>
+        <item>饼干</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/log2"
+    >
+
+    <include
+        android:id="@+id/rela_title"
+        layout="@layout/layout_title_view" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_save"
+        android:layout_below="@id/rela_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--名称-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="名称"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入名称"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_666666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_f2f2f2" />
+
+            <!--价格-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="价格"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_2"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    android:hint="输入价格"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_666666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_f2f2f2" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_f2f2f2" />
+
+            <!--卡路里-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="分类"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_kll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_11"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入分类"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_666666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_f2f2f2" />
+
+            <!--蛋白质-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="广告"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_dbz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_21"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入语言"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_666666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_f2f2f2" />
+
+            <!--脂肪-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="22dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="产地"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edt_zf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/tv_31"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="输入产地"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_666666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_f2f2f2" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="备注"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="备注信息"
+                android:minHeight="50dp"
+                android:textColor="@color/color_43496A"
+                android:textColorHint="@color/color_333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="图片"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:placeholderImage="@mipmap/ic_launcher"
+                app:placeholderImageScaleType="centerCrop"
+
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_title_bar"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/whilt"
+        android:textSize="16sp" />
+
+</RelativeLayout>

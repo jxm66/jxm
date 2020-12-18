@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#ffffff"
+    android:id="@+id/layout"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgv_list"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        app:actualImageResource="@mipmap/pic_liangcai"
+        app:actualImageScaleType="fitXY"
+        app:placeholderImage="@mipmap/pic_liangcai"
+        app:placeholderImageScaleType="fitXY"
+        app:roundedCornerRadius="4dp"
+        app:viewAspectRatio="1.45" />
+
+
+    <TextView
+        android:id="@+id/tv_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/imgv_list"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:textColor="#43496A"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="" />
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/tv_list_item"
+        android:layout_toRightOf="@+id/imgv_list"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="" />
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/tv_1"
+        android:layout_toRightOf="@+id/imgv_list"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="" />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/tv_2"
+        android:layout_toRightOf="@+id/imgv_list"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:maxLines="2"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/imgv_list"
+        android:textColor="#ff0000"
+        android:textSize="12sp"
+        tools:text="￥50.00" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_bg_blue"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="加入购物车"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <com.app.shop.mylibrary.widgts.AddPlusView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

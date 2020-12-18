@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--条目-->
+    <declare-styleable name="MyItemView">
+        <!--左侧-->
+        <attr name="left_pic" />
+        <attr name="left_text" format="string" />
+        <attr name="left_textSize" format="dimension" />
+        <attr name="left_textColor" format="color" />
+        <attr name="show_left_pic" format="boolean" />
+
+
+        <!--右侧-->
+        <attr name="right_pic" format="reference" />
+        <attr name="right_text" format="string" />
+        <attr name="right_textSize" format="dimension" />
+        <attr name="right_textColor" format="color" />
+        <attr name="show_right_pic" format="boolean" />
+        <attr name="show_right_tv" format="boolean" />
+
+        <!--条目-->
+        <attr name="item_height" />
+        <attr name="item_backgroundcolor" format="color" />
+        <attr name="item_background" format="reference" />
+
+        <attr name="show_topline" format="boolean" />
+        <attr name="show_bottomline" />
+    </declare-styleable>
+</resources>
