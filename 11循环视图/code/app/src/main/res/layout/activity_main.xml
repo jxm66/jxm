@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="12sp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:onClick="onListView"
+            android:text="listView" />
+
+        <Button
+            android:textSize="12sp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:onClick="onGridView"
+            android:text="gridView" />
+
+        <Button
+            android:textSize="12sp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:onClick="onRecycleView"
+            android:text="recycle" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/activity_main" />
+
+
+</LinearLayout>
